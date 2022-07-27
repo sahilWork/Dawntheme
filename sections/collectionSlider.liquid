@@ -7,6 +7,13 @@
         <div class="collection-image">
           <img src="{{ colPro.images[0] | img_url: '300X300'}}" />
         </div>
+        <div class="collection-content">
+          <div class="product-title">{{ colPro.title }}</div>
+          <div class="product-title">{{ colPro.price | money }}</div>
+          <div class="product-button">
+            <a href="javascript:void(0)" class="btnPro">Add to Cart</a>
+          </div>
+        </div>
       </div>
     {% endfor %}
   </div>
