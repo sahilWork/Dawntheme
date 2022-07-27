@@ -1,12 +1,17 @@
 {% schema %}
   {
-    "name": "Section name",
-    "settings": []
+    "name": "Collection Slider",
+    "settings": [
+      {
+        "type": "text",
+        "id": "sectionTitle",
+        "label": "Title"
+      },
+      {
+        "type": "collection",
+        "id": "collection",
+        "label": "Collection"
+      }
+    ]
   }
 {% endschema %}
-
-{% stylesheet %}
-{% endstylesheet %}
-
-{% javascript %}
-{% endjavascript %}
